@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <title>Hospital Management System</title>
+    <!-- Correctly include your custom stylesheet -->
+    <link rel="stylesheet" href="{% static 'accounts/style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about'%}">About Us</a></li>
+        <li><a href="{% url 'teams'%}">Teams</a></li>
+        <li><a href="{% url 'login'%}">Services</a></li>
+        <li><a href="">Contacts</a></li>
+        <li><a href="">Testimonials</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <img src="{% static 'accounts/images/logob.png' %}" alt="Logo" />
+    </div>
+    <div class="text">
+      <h1>Welcome to Echo Clinic</h1>
+      <p>
+        Where we revolutionalize the way <br />you access healthcare. At Echo
+        Clinic, our mission is clear; <br />
+        we bring medical services directly to you, allowing you to <br />consult
+        with doctores with doctords, book appointments, and even reserve <br />
+        hospital roooms, all from the comfort and safety of your <br />
+        home. We understand the challenges of traditional <br />
+        healthcare access, including time consumming queues and <br />
+        the stress of hospital visits. That's why we've designed our<br />services
+        to provide a seamless, hassle-free healthcare <br />experience without
+        you ever having to leave your home.
+      </p>
+    </div>
+    <a href="{% url 'login' %}" class="get-started-button">Get Started</a>
+
+    <div class="doctor">
+      <img src="{% static 'accounts/images/doc1.png' %}" alt="Logo" />
+    </div>
+    <div class="container">
+      <div class="new">
+        <h1>Why Choose Us?</h1>
+      </div>
+      <div class="box1">
+        <div class="icon1">
+          <i class="fa fa-check-square" aria-hidden="true"></i>
+        </div>
+        <h1>Accessibility</h1>
+        <p>
+          Our platform is designed to be user-friendly, ensuring that booking
+          appointments, consulting with doctors, and even paying for services
+          are straightforward and accessible to everyone
+        </p>
+      </div>
+
+      <div class="box2">
+        <div class="icon2">
+          <i class="fa fa-handshake-o" aria-hidden="true"></i>
+        </div>
+        <h1>Convenience</h1>
+        <p>
+          Say goodbye to waiting in long lines and travelling to clinics. With
+          Echo Clinic, your health needs are met wherever you are, saving you
+          time and hassle.
+        </p>
+      </div>
+
+      <div class="box3">
+        <div class="icon3">
+          <i class="fa fa-hospital-o" aria-hidden="true"></i>
+        </div>
+        <h1>Individualized</h1>
+        <p>
+          We believe in healthcare that understands your individual needs. Our
+          services allow for personalized interactions with professionals,
+          ensuring that your health concerns are addressed with the utmost care.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

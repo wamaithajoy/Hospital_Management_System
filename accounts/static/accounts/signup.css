@@ -1,0 +1,59 @@
+/* General body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for form fields */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    border: 3px solid #64EBB6 !important; /* Important to override any existing styles */
+    border-radius: 4px !important; /* Same here */
+    margin: 10px 0;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #34ce57 !important; /* Darker or different color on focus if needed */
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(100, 235, 182, 0.25);
+}
+
+/* Custom styling for the submit button */
+.btn-custom {
+    background-color: #64EBB6; /* Same green color for consistency */
+    border-color: #64EBB6; /* Same here */
+    color: white; /* White text color */
+}
+
+.btn-custom:hover {
+    background-color: #56d4a3; /* Slightly darker green on hover */
+    border-color: #50c298;
+}

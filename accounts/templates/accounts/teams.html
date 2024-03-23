@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <title>Hospital Management System</title>
+    <!-- Correctly include your custom stylesheet -->
+    <link rel="stylesheet" href="{% static 'accounts/teams.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about'%}">About Us</a></li>
+        <li><a href="{% url 'teams'%}">Teams</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contacts</a></li>
+        <li><a href="">Testimonials</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <img src="{% static 'accounts/images/logob.png' %}" alt="Logo" />
+    </div>
+
+    <div class="box">
+      <img src="{% static 'accounts/images/doctor.png' %}" alt="Logo" />
+      <div class="container">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+
+    <div class="doc">
+      <h1>Our Esteemed Doctors</h1>
+    </div>
+
+    <div class="box1">
+      <img src="{% static 'accounts/images/doctor.png' %}" alt="Logo" />
+      <div class="container1">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+
+    <div class="box2">
+      <img src="{% static 'accounts/images/doctor.png' %}" alt="Logo" />
+      <div class="container2">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+
+    <div class="box3">
+      <img src="{% static 'accounts/images/doctor.png' %}" alt="Logo" />
+      <div class="container3">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+
+    <div class="box4">
+      <img src="{% static 'accounts/images/doctor.png' %}" alt="Logo" />
+      <div class="container4">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+
+    <div class="box5">
+      <img src="{% static 'accounts/images/doctor.png' %}" alt="Logo" />
+      <div class="container5">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+
+    <div class="box6">
+      <img src="{% static 'accounts/images/doctor.png' %}" alt="Logo" />
+      <div class="container6">
+        <h4><b>John Doe</b></h4>
+        <p>Architect & Engineer</p>
+      </div>
+    </div>
+  </body>
+</html>

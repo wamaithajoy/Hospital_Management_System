@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'accounts/login.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login</h2>
+      <!-- Display any error messages -->
+      {% if form.errors %}
+      <p class="text-danger">
+        Your username and password didn't match. Please try again.
+      </p>
+      {% endif %}
+      <form method="post">
+        {% csrf_token %}
+        <!-- Username Field -->
+        <div class="form-group">
+          <label for="id_username">Username:</label>
+          <input
+            type="text"
+            name="username"
+            class="form-control"
+            id="id_username"
+            placeholder="Username"
+            required
+          />
+        </div>
+        <!-- Password Field -->
+        <div class="form-group">
+          <label for="id_password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            class="form-control"
+            id="id_password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <!-- Submit Button -->
+
+        <button type="submit" class="btn btn-custom">Login</button>
+      </form>
+      <!-- Link to Signup Page -->
+      <p>Don't have an account? <a href="{% url 'signup' %}">Sign up</a></p>
+    </div>
+    <!-- Bootstrap JS and optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

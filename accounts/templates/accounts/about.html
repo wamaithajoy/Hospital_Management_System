@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <title>Hospital Management System</title>
+    <!-- Correctly include your custom stylesheet -->
+    <link rel="stylesheet" href="{% static 'accounts/about.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about'%}">About Us</a></li>
+        <li><a href="{% url 'teams'%}">Teams</a></li>
+        <li><a href="{% url 'login'%}">Services</a></li>
+        <li><a href="#form-container">Contacts</a></li>
+        <li><a href="#blogs">Testimonials</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <img src="{% static 'accounts/images/logob.png' %}" alt="Logo" />
+    </div>
+    <div class="story">
+      <h1>Our Story</h1>
+      <p>
+        Echo Clinic was born out of a simple, yet profound realization:<br />
+        healthcare should come to you, not the other way around. In a world<br />
+        where convenience and efficiency are at the forefront of every
+        service,<br />
+        healthcare seemed to lag behind, bound by traditional practices that
+        no<br />
+        longer served the modern patient’s needs.<br />
+      </p>
+      <p>
+        In 2020, amidst a global health crisis, the idea of Echo Clinic took
+        <br />
+        shape. Our founders, a team of healthcare professionals and tech<br />
+        innovators, noticed a glaring gap in the healthcare system -<br />
+        accessibility. They envisioned a platform that would bridge this gap,<br />
+        making healthcare services as accessible as a click on your device.
+        From<br />
+        that vision, Echo Clinic emerged, dedicated to delivering healthcare<br />
+        that is not just a service, but a seamless and integral part of your<br />
+        daily life.<br />
+      </p>
+      <a href="{% url 'login' %}" class="get-started-button">Learn More</a>
+    </div>
+    <div class="hand">
+      <img src="{% static 'accounts/images/together.png' %}" alt="Logo" />
+    </div>
+
+    <div class="box1">
+      <h1>vision</h1>
+      <p>
+        To redefine healthcare by making it universally accessible, efficient,
+        <br />
+        and profoundly personal.
+      </p>
+    </div>
+
+    <div class="box2">
+      <h1>Mission</h1>
+      <p>
+        Echo Clinic is on a mission to transform the healthcare experience by
+        <br />
+        providing comprehensive, on-demand medical services<br />
+      </p>
+    </div>
+
+    <div class="core">
+      <h1>Our Core Values</h1>
+    </div>
+    <div class="circle1">
+      <h1>1</h1>
+      <h2>Compassion</h2>
+      <p>
+        At the heart of our services is a deep empathy <br />for those we serve.
+      </p>
+    </div>
+
+    <div class="circle2">
+      <h1>2</h1>
+      <h2>Accessibility</h2>
+      <p>
+        Ensuring healthcare is within reach of <br />
+        everyone, everywhere.
+      </p>
+    </div>
+
+    <div class="circle3">
+      <h1>3</h1>
+      <h2>Integrity</h2>
+      <p>
+        Upholding the highest standards of <br />professionalism and ethical
+        practice.
+      </p>
+    </div>
+
+    <div class="circle4">
+      <h1>4</h1>
+      <h2>Tailored Care</h2>
+      <p>
+        Recognizing the unique needs of each individual <br />
+        and adapting our services accordingly.
+      </p>
+    </div>
+
+    <div class="circle5">
+      <h1>5</h1>
+      <h2>Collaboration</h2>
+      <p>
+        Working together with patients, providers, <br />and partners to improve
+        health outcomes.
+      </p>
+    </div>
+
+    <div class="circle6">
+      <h1>6</h1>
+      <h2>Innovation</h2>
+      <p>
+        Continuously seeking out new and better <br />
+        ways to serve our patients
+      </p>
+    </div>
+  </body>
+</html>

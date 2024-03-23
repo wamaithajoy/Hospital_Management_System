@@ -1,0 +1,38 @@
+/* login.css */
+body {
+    background-color: #1B9CE4; /* Sets the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff; /* Optional: Makes the login form stand out */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Adjust based on your preference */
+}
+
+.form-control, .btn-custom {
+    width: 100%; /* Adjust input fields and button to full width of their container */
+    max-width: 360px; /* Control max width */
+    margin: 10px auto; /* Centering and adding some vertical space */
+}
+
+.btn-custom {
+    background-color: #1be4b2; /* Your custom color */
+    color: #ffffff; /* Adjust text color as needed */
+    border: none; /* Optional: Removes the border */
+}
+
+.btn-custom:hover, .btn-custom:focus {
+    background-color: #1690bf; /* Darker shade for hover/focus */
+    color: #ffffff; /* Adjust text color for hover/focus as needed */
+}
+
+
+

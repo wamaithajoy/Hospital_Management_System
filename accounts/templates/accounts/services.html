@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <title>Hospital Management System</title>
+    <!-- Correctly include your custom stylesheet -->
+    <link rel="stylesheet" href="{% static 'accounts/services.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'about'%}">About Us</a></li>
+        <li><a href="{% url 'teams'%}">Teams</a></li>
+        <li><a href="{% url 'login'%}">Services</a></li>
+        <li><a href="">Contacts</a></li>
+        <li><a href="">Testimonials</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+      <img src="{% static 'accounts/images/logob.png' %}" alt="Logo" />
+    </div>
+
+    <div class="services">
+      <h1>Our Services</h1>
+    </div>
+
+    <div class="box">
+      <img src="{% static 'accounts/images/Virtual.png' %}" alt="Logo" />
+      <h1>Virtual Consultation</h1>
+      <p>
+        Connect with healthcare professionals <br />from the comfort of your
+        home. Our <br />
+        virtual consultations offer a convenient, <br />
+        secure way to discuss your<br />
+        health concerns, get diagnoses, and <br />receive treatment plans
+        without the <br />
+        need to visit a clinic in person
+      </p>
+      <a href="{% url 'book_consultation' %}" class="get-started-button"
+        >Learn More</a
+      >
+    </div>
+
+    <div class="box1">
+      <img src="{% static 'accounts/images/Home.png' %}" alt="Logo" />
+      <h1>Home Services</h1>
+      <p>
+        Experience personalized healthcare <br />without stepping outside your
+        door.<br />
+        Our home health services provide <br />professional medical care ranging
+        from<br />
+        nursing to physical therapy, <br />
+        delivered directly to your home by our<br />
+        certified healthcare providers."
+      </p>
+      <a href="{% url 'home_health_service' %}" class="get-started-button"
+        >Learn More</a
+      >
+    </div>
+
+    <div class="box2">
+      <img src="{% static 'accounts/images/Remote.png' %}" alt="Logo" />
+      <h1>Remote Monitoring</h1>
+      <p>
+        Keep your health in check with our <br />state-of-the-art remote
+        monitoring<br />
+        service. Ideal for patients with <br />
+        chronic conditions, this service allows<br />
+        for continuous monitoring of your <br />health parameters, ensuring
+        timely <br />
+        medical interventions when necessary.
+      </p>
+      <a href="{% url 'remote_monitoring' %}" class="get-started-button"
+        >Learn More</a
+      >
+    </div>
+
+    <div class="box3">
+      <img src="{% static 'accounts/images/Mobile.png' %}" alt="Logo" />
+      <h1>Mobile Laboratory</h1>
+      <p>
+        Skip the queue for laboratory <br />tests with our mobile lab services.
+        We<br />
+        come to you for sample collection <br />and deliver fast, accurate
+        results<br />
+        electronically, making diagnostic <br />testing convenient and
+        hassle-free."
+      </p>
+      <a href="{% url 'login' %}" class="get-started-button">Learn More</a>
+    </div>
+
+    <div class="box4">
+      <img src="{% static 'accounts/images/Online.png' %}" alt="Logo" />
+      <h1>Online Dosage</h1>
+      <p>
+        Manage your medications effortlessly <br />
+        with our online prescription<br />
+        management service. Renew prescriptions, <br />
+        receive new ones, and have your<br />
+        medications delivered to your <br />
+        doorstep, all through a seamless online platform.
+      </p>
+      <a href="{% url 'login' %}" class="get-started-button">Learn More</a>
+    </div>
+
+    <div class="box5">
+      <img src="{% static 'accounts/images/Ondemand.png' %}" alt="Logo" />
+      <h1>On-demand Health</h1>
+      <p>
+        Empower yourself with reliable <br />health information at your
+        fingertips.<br />
+        Our platform offers on-demand <br />
+        access to a wealth of health resources,<br />
+        helping you make informed decisions <br />about your health and
+        wellness.
+      </p>
+      <a href="{% url 'login' %}" class="get-started-button">Learn More</a>
+    </div>
+  </body>
+</html>
